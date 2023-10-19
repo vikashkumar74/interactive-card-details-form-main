@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>card-details</title>
+  <link rel="webpage icon" type="png" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+
+    <div class="front-card">
+      <div class="front-card-details">
+        <img class="front-img" src="./images/bg-card-front.png" alt="fonts-card">
+        <div class="logo">
+          <img src="./images/card-logo.svg" alt="">
+          <div>
+            <div class="card-num" data-set="2"> 0000 0000 0000 0000 </div>
+            <div class="card-holder">
+              <span class="name" data-set="1">JANA APPLESEE</span>
+              <div>
+                <span class="expire-date" data-set="3">00
+                </span>/
+                <span class="expire-year" data-set="4">00</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="back-card">
+      <div class="back-card-details">
+        <img class="front-img" src="./images/bg-card-back.png" alt="back-card">
+        <div class="cvc-no" data-set="5"> 000 </div>
+      </div>
+    </div>
+
+    <section class="left">
+      <img class="desktop-img" src="./images/bg-main-desktop.png" alt="">
+      <img class="mobile-img" src="./images/bg-main-mobile.png" alt="">
+    </section>
+    <section class="right">
+      <label for="">
+        CARDHOLDER NAME
+        <input class="input holder-name" maxlength="15" data-set="1" type="text"  placeholder="e.g.Jana Applesee">
+        <span class="error-name" data-set="7"></span>
+      </label>
+      <label for="">
+        CARD NUMBER
+        <input class="input card-number" maxlength="19" data-set="2" type="text"placeholder="e.g 1234 5678 9123 0000">
+        <span class="error-card-num" data-set="8"></span>
+      </label>
+      <div class="input-date">
+        <div>
+          <span> EXP. DATE (MM//YY)</span>
+          <div class="date">
+            <label for="">
+              <input class="input " id="month" type="text" data-set="3" maxlength="2" placeholder="MM">
+            </label>
+            <label for="">
+              <input class="input " id="year" type="text" maxlength="2" data-set="4" placeholder="YY">
+            </label>
+          </div>
+          <span class="error-date" data-set="9"></span>
+        </div>
+        <div class="cvc">
+          <label for="">
+            CVC
+            <input class="input " id="cvc-num" type="text" maxlength="3" placeholder="e.g 123" data-set="5">
+
+          </label>
+          <span class="error-cvc" data-set="11"></span>
+        </div>
+
+      </div>
+      <button class="conform-btn">Conform</button>
+    </section>
+    <section class="success-msg">
+      <img src="./images/icon-complete.svg" alt="complete-details-icon">
+      <h1>Thank you!</h1>
+      <p>We've added your card details</p>
+      <button class="continue-btn">continue</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+
+  <div class="username"> Challange by <a href="https://www.frontendmentor.io/home">Frontent mentore</a> coded by <a href="#">vikash kumar</a></div>
+</body>
+
+</html>
